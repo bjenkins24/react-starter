@@ -13,7 +13,7 @@ app.get('/*', function(req, res){
 });
 
 app.listen(port, () => {
-    console.log(`Started app on port YUP ${port}`);
+    console.log(`Started app on port ${port}`);
 });
 
 module.exports = {app};
