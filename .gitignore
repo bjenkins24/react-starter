@@ -1,1 +1,4 @@
 node_modules
+public/bundle.js
+*.map
+server/config/config.json
