@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "express": "^4.15.3",
+    "material-ui": "next",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.2"
@@ -20,6 +21,11 @@
     "babel-preset-react": "^6.24.1",
     "babelify": "^7.3.0",
     "browser-sync": "^2.18.13",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.3.0",
     "gulp": "^3.9.1",
     "gulp-cond": "^1.0.0",
     "gulp-nodemon": "^2.2.1",
