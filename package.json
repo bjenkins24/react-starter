@@ -1,7 +1,7 @@
 {
   "name": "dexio",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server/index.js",
   "repository": "https://github.com/bjenkins24/dexio",
   "author": "Brian Jenkins <bjenkins@yourmusiclessons.com>",
   "license": "MIT",

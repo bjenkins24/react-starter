@@ -5,7 +5,7 @@ const nodemon = require('gulp-nodemon');
 
 gulp.task('watch', () => {
   nodemon({
-    script: 'server/server.js',
+    script: 'server/index.js',
     ignore: [
       'gulpfile.js',
       'gulp/**/*',
