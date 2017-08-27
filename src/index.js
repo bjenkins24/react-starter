@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import NotFound from './common/NotFound';
 
 class App extends Component {
     render() {
         return (
-            <div>
+            <MuiThemeProvider>
                 <h1>Dexio</h1>
                 <p>Enterprise Knowledge Sharing</p>
-            </div>
+            </MuiThemeProvider>
         );
     }
 }
