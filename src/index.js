@@ -1,28 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import NotFound from './common/NotFound';
+import NotFound from './components/NotFound';
+import Header from './components/Header';
 
-class App extends Component {
-    render() {
-        return (
-            <MuiThemeProvider>
-                <h1>Dexio</h1>
-                <p>Enterprise Knowledge Sharing</p>
-            </MuiThemeProvider>
-        );
-    }
-}
+const App = () => (
+  <MuiThemeProvider>
+    <Header />
+  </MuiThemeProvider>
+);
 
 ReactDOM.render(
-    <BrowserRouter>
-        <div>
-            <Switch>
-                <Route exact path="/" component={App} />
-                <Route component={NotFound} />
-            </Switch>
-        </div>
-    </BrowserRouter>
+  <BrowserRouter>
+    <div>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route component={NotFound} />
+      </Switch>
+    </div>
+  </BrowserRouter>
   , document.querySelector('.container'));

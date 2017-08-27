@@ -8,12 +8,12 @@ const port = process.env.PORT;
 
 app.use(express.static(path.resolve(__dirname, '../public')));
 
-app.get('/*', function(req, res){
-    res.sendFile(path.resolve(__dirname, '../public/index.html'));
+app.get('/*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../public/index.html'));
 });
 
 app.listen(port, () => {
-    console.log(`Started app on port ${port}`);
+  console.log(`Started app on port ${port}`);
 });
 
-module.exports = {app};
+module.exports = { app };

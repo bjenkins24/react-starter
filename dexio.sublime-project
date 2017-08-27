@@ -2,12 +2,17 @@
 	"folders":
 	[
 		{
-			"path": "."
+			"path": ".",
+            "folder_exclude_patterns": [
+                "node_modules"
+            ]
 		}
 	],
     "settings":
     {
+        "trim_trailing_white_space_on_save": true,
         "tab_size": 2,
-        "translate_tabs_to_spaces": true
+        "translate_tabs_to_spaces": true,
+        "ensure_newline_at_eof_on_save": true
     }
 }
