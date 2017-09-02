@@ -1,9 +1,17 @@
 import React from 'react';
+import { AppBar, Typography, Toolbar, Button } from 'material-ui';
+import APP from '../config/constants';
 
 const Header = () => (
   <header>
-    <h1>Dexio</h1>
-    <p>Enterprise Knowledge Sharing</p>
+    <AppBar>
+      <Toolbar>
+        <Typography type="display1" color="inherit">
+          {APP.brand}
+        </Typography>
+        <Button color="contrast">Login</Button>
+      </Toolbar>
+    </AppBar>
   </header>
 );
 

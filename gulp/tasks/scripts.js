@@ -19,7 +19,7 @@ const browserifyOptions = assign({}, watchify.args, {
 
 let browserifyInstance = browserify(browserifyOptions)
   .transform(babelify.configure({
-    presets: ['es2015', 'react', 'stage-1'],
+    presets: ['es2015', 'react', 'stage-1', 'flow'],
   }));
 
 if (WATCH) {

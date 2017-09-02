@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import NotFound from './components/NotFound';
 import Header from './components/Header';
+import Footer from './components/Footer';
+import Content from './components/Content';
 
 const App = () => (
-  <MuiThemeProvider>
+  <div>
     <Header />
-  </MuiThemeProvider>
+    <Content />
+    <Footer />
+  </div>
 );
 
 ReactDOM.render(
